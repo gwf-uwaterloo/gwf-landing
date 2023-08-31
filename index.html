@@ -21,30 +21,34 @@
     </div>
 
     <div class="header-row">
-        <h1>UW GWF Legacy Portal</h1> 
+        <h1>UW GWF Legacy Portal</h1>
     </div>
 
     <div class="row">
-        <div class="box" onclick="boxClicked(1)">
-            <i class="fa fa-file fa-3x" aria-hidden="true"></i>
-            <p>Publications</p>
-        </div>
-        <div class="box" onclick="boxClicked(2)">
+        <a href="https://gwf-uwaterloo.github.io/gwf-publications/" class="box-link">
+            <div class="box">
+                <i class="fa fa-file fa-3x" aria-hidden="true"></i>
+                <p>Publications</p>
+            </div>
+        </a>
+        <a href="https://gwf-uwaterloo.github.io/gwf-thesis/" class="box-link">
+        <div class="box">
             <i class="fa fa-graduation-cap fa-3x" aria-hidden="true"></i>
             <p>Theses</p>
         </div>
+        </a>
     </div>
     <div class="row">
-        <div class="box" onclick="boxClicked(3)">
+        <div class="box" onclick="boxClicked('Books')">
             <i class="fa fa-book fa-3x" aria-hidden="true"></i>
             <p>Books</p>
         </div>
-        <div class="box" onclick="boxClicked(4)">
+
+        <div class="box" onclick="boxClicked('Datasets')">
             <i class="fa fa-database fa-3x" aria-hidden="true"></i>
             <p>Datasets</p>
         </div>
     </div>
-
 
     <!-- <div class="row">
         <div class="box" onclick="boxClicked(5)">
@@ -59,7 +63,8 @@
 
     <script>
         function boxClicked(boxNumber) {
-            alert('Box ' + boxNumber + ' clicked!');
+            event.preventDefault();
+            alert(boxNumber + ' clicked!');
         }
     </script>
 </body>

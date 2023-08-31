@@ -47,7 +47,19 @@ body {
 }
 
 .row:first-of-type {
-    margin-top: 70px; /* Adjust this based on the height of your header */
+    margin-top: 70px;
+}
+
+.box-link {
+    flex: 0 0 48%;
+    text-decoration: none;
+    margin: 0 1%;
+    text-decoration: none;
+    color: inherit;    
+}
+
+.box-link .fas, .box-link p {
+    color: inherit;
 }
 
 .box {
@@ -68,14 +80,14 @@ body {
 .header-row {
     width: 100%;
     color: #000000; 
-    padding: 60px 0; /* Increase padding to make the header even bigger */
+    padding: 60px 0;
     text-align: center;
-    margin-bottom: 20px; /* Space between header and following content */
+    margin-bottom: 20px;
 }
 
 .header-row h1 {
-    font-size: 2.5em; /* Increase font size for more prominence */
-    margin: 0; /* Remove default margin */
+    font-size: 2.5em;
+    margin: 0;
 }
 
 
