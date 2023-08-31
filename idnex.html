@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Clickable Boxes</title>
+</head>
+
+<body>
+    <div class="header">
+        <div id="navbar-container"
+            style="display:block;overflow:hidden;z-index:10;left:0;margin:0;line-height:2em;white-space:normal;background-color:#000;color:#dfdfdf;height:57px;right:0;top:0">
+            <a href="/gwf-publications/"
+                style="outline:none;position:absolute;top:50%;left:50%;max-width:45%;transform:translate(-50%,-50%)">
+                <img alt="" src="images/waterloo-logo.svg"
+                    style="display:flex;flex-shrink:0;transition:opacity 300ms linear 0s;cursor:pointer;width:139.273px;max-width:100%;vertical-align:middle"></a>
+        </div>
+    </div>
+
+    <div class="header-row">
+        <h1>UW GWF Legacy Portal</h1> 
+    </div>
+
+    <div class="row">
+        <div class="box" onclick="boxClicked(1)">
+            <i class="fa fa-file fa-3x" aria-hidden="true"></i>
+            <p>Publications</p>
+        </div>
+        <div class="box" onclick="boxClicked(2)">
+            <i class="fa fa-graduation-cap fa-3x" aria-hidden="true"></i>
+            <p>Theses</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="box" onclick="boxClicked(3)">
+            <i class="fa fa-book fa-3x" aria-hidden="true"></i>
+            <p>Books</p>
+        </div>
+        <div class="box" onclick="boxClicked(4)">
+            <i class="fa fa-database fa-3x" aria-hidden="true"></i>
+            <p>Datasets</p>
+        </div>
+    </div>
+
+
+    <!-- <div class="row">
+        <div class="box" onclick="boxClicked(5)">
+            <i class="fas fa-user fa-2x"></i>
+            <p>Name 5</p>
+        </div>
+        <div class="box" onclick="boxClicked(6)">
+            <i class="fas fa-user fa-2x"></i>
+            <p>Name 6</p>
+        </div>
+    </div> -->
+
+    <script>
+        function boxClicked(boxNumber) {
+            alert('Box ' + boxNumber + ' clicked!');
+        }
+    </script>
+</body>
+
+</html>
